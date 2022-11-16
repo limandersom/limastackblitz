@@ -11,16 +11,25 @@ body {
 
 header {
   background-color: orange;
+
+  /* property item */
+  grid-area: header;  
 }
 
 main {
   background-color: deepskyblue;
+  /* property item */
+  grid-area: main;
 }
 
 aside {
   background-color: lightcoral;
+  /* property item */
+  grid-area: sidebar;  
 }
 
 footer {
   background-color: yellowgreen;
+  /* property item */
+  grid-area: footer;  
 }
