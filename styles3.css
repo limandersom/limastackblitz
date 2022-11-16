@@ -1,0 +1,26 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+
+  grid-template-areas:
+    'header header header header'
+    'main main . sidebar'
+    'footer footer footer footer';
+}
+
+header {
+  background-color: orange;
+}
+
+main {
+  background-color: deepskyblue;
+}
+
+aside {
+  background-color: lightcoral;
+}
+
+footer {
+  background-color: yellowgreen;
+}
