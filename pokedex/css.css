@@ -1,7 +1,71 @@
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 393px;
+  background-color: #eee;
+  border-radius: 2rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template:
+    'icons' auto
+    'title' 100px
+    'image' 200px
+    / 1fr;
+}
+
+main .icons {
+  background-color: #ccc;
+  grid-area: icons;
+
+  display: grid;
+  grid-template:
+    'arrow heart' 2rem
+    / 1fr 1fr;
+}
+
+main .icons #arrow {
+  grid-area: arrow;
+}
+
+main .icons #heart {
+  grid-area: heart;
+}
+
+main .title {
+  background-color: #ddd;
+  grid-area: title;
+
+  display: grid;
+  grid-template:
+    'title id'
+    'types id'
+    / 1fr 1fr;
+}
+
+main .icons #heart {
+  grid-area: heart;
+}
+
+main .title div h1 {
+  background-color: #eeeaaa;
+  grid-area: title;
+}
+
+main .title div p {
+  background-color: #eeeaaa;
+  grid-area: types;
+}
+
+main .title div span {
+  background-color: #eeeaaa;
+  grid-area: types;
 }
